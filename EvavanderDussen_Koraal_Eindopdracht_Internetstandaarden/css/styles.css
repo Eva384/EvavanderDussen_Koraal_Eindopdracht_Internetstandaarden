@@ -1,0 +1,237 @@
+/* algemeen */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+  border-bottom: #CCC solid 0.05em;
+}
+
+header img {
+  width: 8em;
+  padding-top: 0.3em;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+}
+
+li {
+  padding: 0em 1em;
+}
+
+* {
+  background-color: #181818;
+  color: #CCC;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+button {
+  border: 0;
+  padding-left: 0;
+}
+
+button img {
+  width: 3em;
+}
+
+button img:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  padding-top: 1em;
+  font-size: 2em;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+}
+
+/* home */
+
+main#home h1 + p {
+  font-size: larger;
+  font-style: italic;
+}
+
+main#home > section:first-of-type p {
+  max-width: 40em;
+}
+
+main#home section div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-left: 0em;
+}
+
+main#home img + div p:first-child {
+  margin-top: 0em;
+  color: #888;
+  font-size: smaller;
+}
+
+main#home h2 + section div img + div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 2em;
+}
+
+main#home > section:nth-of-type(2) div p:nth-child(2) {
+  max-width: 40em;
+  margin-bottom: 1.2em;
+}
+
+main#home > section:nth-of-type(2), main#home > div {
+  margin: 3em 15% 6em 15%;
+}
+
+main#home > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+main#home img + h3 {
+  max-width: 12em;
+}
+
+main#home h2 + section {
+  border-bottom: #CCC solid 0.05em;
+  padding-bottom: 6em;
+}
+
+main#home a:last-of-type {
+  margin: 15%;
+  background-color: #0C5EAF;
+  font-size: 1.5em;
+  padding: 0.8em 1em;
+  border-radius: 0.5em;
+}
+
+main#home a:last-of-type:hover {
+  background-color: #003F7E;
+}
+
+/* about */
+
+main#about section:first-child, main#home > section:first-of-type, main#afleveringen > section:first-child {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main#about section > p {
+  max-width: 40em;
+}
+
+main#about div > p {
+  max-width: 30em;
+}
+
+main#about section:not(:first-child) {
+  display: flex;
+  padding-bottom: 2em;
+  margin: 4em;
+}
+
+main#about section:nth-child(4) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+main#about h3 {
+  margin-top: 0em;
+}
+
+main#about img + div {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/* afleveringen */
+
+main#afleveringen section section {
+  background-color: #293346;
+  border-radius: 1em;
+  padding: 1.5em;
+}
+
+main#afleveringen section section p:first-of-type {
+  margin: 0;
+  padding-bottom: 6em;
+  background-color: #293346;
+}
+
+main#afleveringen section section p:last-of-type {
+  margin: 0;
+  padding: 0.3em;
+  border-radius: 0.2em;
+  text-align: start;
+  background-color: #BBB;
+  color: #333;
+}
+
+main#afleveringen div div div, main#afleveringen section > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-left: 0em;
+}
+
+main#afleveringen div div div {
+  margin-top: 0.8em;
+}
+
+main#afleveringen section > div > div {
+  padding-left: 1em;
+}
+
+main#afleveringen img + div > p {
+  margin-top: 0;
+}
+
+main#afleveringen > section:not(:first-child) {
+  margin: 2em 8%;
+}
+
+main#afleveringen h2 ~ section:not(:last-child) {
+  border-bottom: #CCC solid 0.05em;
+  padding-bottom: 3em;
+}
+
+main#afleveringen h2 {
+  margin-bottom: 3em;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+footer {
+  margin-top: 6em;
+}
